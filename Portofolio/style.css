@@ -1,0 +1,144 @@
+/* 4. Comment: CSS CV M. Rafi Hafidz Azzaky */
+
+/* 5. Selector Universal */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #eef2f7; /* 2. Color */
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+/* 3. Box Model & 7. Position */
+.main {
+    position: relative; /* 7. Position */
+    width: 85%;
+    max-width: 950px;
+    margin: 50px auto; /* 3. Box Model: Margin */
+    padding: 40px;     /* 3. Box Model: Padding */
+    background-color: white;
+    border: 1px solid #dbe3ee;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Styling Foto agar rapi di dalam box */
+.main img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2563eb;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 35px 0;
+}
+
+/* Styling Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+}
+
+/* 8. Grid untuk Hobi */
+.grid-hobi {
+    display: grid; /* 8. Grid */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.grid-hobi li {
+    background-color: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* 6. Display Mode untuk Kontak */
+.kontak-wrapper {
+    margin-top: 15px;
+}
+
+a {
+    display: inline-block; /* 6. Display Mode */
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+}
+
+/* Styling Form & Tombol Kirim */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
